@@ -1,0 +1,756 @@
+[
+  {
+    "id": "ep-001",
+    "name": "EXTERIOR WASH ONLY",
+    "slug": "exteriod-wash-only",
+    "description": "Exterior car wash using shampoo, wax and water. Note: The company has water and electricity.",
+    "price": 5,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-001.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "exterior wash only"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.403112307350588,
+    "reviewCount": 32,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل خارجي فقط",
+    "descriptionAr": "غسيل خارجي للسيارة باستخدام الشامبو والشمع والماء. ملاحظة: الشركة توفر الماء والكهرباء.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-002",
+    "name": "Basic wash - Sedan",
+    "slug": "basic-wash-sedan",
+    "description": "External wash with shampoo and wax + interior wipe of dust and dirt + paper towels + perfume + vacuum + floor covering + garbage bag.",
+    "price": 6,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-002.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "basic wash - sedan"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.5442674355871455,
+    "reviewCount": 7,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل أساسي - سيدان",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + مسح داخلي للغبار والأوساخ + مناشف ورقية + معطر + كناسة + تغطية الأرضيات + كيس نفايات.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-003",
+    "name": "Basic wash - Suv",
+    "slug": "basic-wash-suv",
+    "description": "External wash with shampoo and wax + interior wipe of dust and dirt + paper towels + perfume + vacuum + floor covering + garbage bag.",
+    "price": 7,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-003.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "basic wash - suv"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.714616385935031,
+    "reviewCount": 53,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل أساسي - دفع رباعي",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + مسح داخلي للغبار والأوساخ + مناشف ورقية + معطر + كناسة + تغطية الأرضيات + كيس نفايات.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-004",
+    "name": "Shine Wash - Sedan",
+    "slug": "shine-wash-sedan",
+    "description": "Exterior wash with shampoo and wax + interior dust wipe + tire wax and polish + paper towels + softener + vacuum + air conditioning vent cleaning + rim cleaning + floor bins + trash bag + front cabin polishing.",
+    "price": 10,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-004.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "shine wash - sedan"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.329860401202812,
+    "reviewCount": 19,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل لامع - سيدان",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + مسح داخلي للغبار + تلميع الإطارات + مناشف ورقية + منعم + كناسة + تنظيف فتحات المكيف + تنظيف الجنوط + حاويات الأرضيات + كيس نفايات + تلميع المقصورة الأمامية.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-005",
+    "name": "Shine Wash - Suv",
+    "slug": "shine-wash-suv",
+    "description": "Exterior wash with shampoo and wax + interior dust wipe + tire wax and polish + paper towels + softener + vacuum + air conditioning vent cleaning + rim cleaning + floor bins + trash bag + front cabin polishing.",
+    "price": 12,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-005.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "shine wash - suv"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.470798913627453,
+    "reviewCount": 42,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل لامع - دفع رباعي",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + مسح داخلي للغبار + تلميع الإطارات + مناشف ورقية + منعم + كناسة + تنظيف فتحات المكيف + تنظيف الجنوط + حاويات الأرضيات + كيس نفايات + تلميع المقصورة الأمامية.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-006",
+    "name": "Detailing - Sedan",
+    "slug": "detailing-sedan",
+    "description": "Exterior wash with shampoo and wax + interior cleaning + washing seats and floors + vacuum + cleaning AC vents + polishing interior + floor covering + garbage bags + removing stubborn stains.",
+    "price": 20,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-006.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "detailing - sedan"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.297771265300595,
+    "reviewCount": 18,
+    "createdAt": "2026-07-07",
+    "nameAr": "تلميع شامل - سيدان",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + تنظيف داخلي + غسيل المقاعد والأرضيات + كناسة + تنظيف فتحات المكيف + تلميع داخلي + تغطية الأرضيات + أكياس نفايات + إزالة البقع الصعبة.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-007",
+    "name": "Detailing - Suv",
+    "slug": "detailing-suv",
+    "description": "Exterior wash with shampoo and wax + interior cleaning + washing seats and floors + vacuum + cleaning AC vents + polishing interior + floor covering + garbage bags + removing stubborn stains.",
+    "price": 25,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-007.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "detailing - suv"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.28324272103677,
+    "reviewCount": 5,
+    "createdAt": "2026-07-07",
+    "nameAr": "تلميع شامل - دفع رباعي",
+    "descriptionAr": "غسيل خارجي بالشامبو والشمع + تنظيف داخلي + غسيل المقاعد والأرضيات + كناسة + تنظيف فتحات المكيف + تلميع داخلي + تغطية الأرضيات + أكياس نفايات + إزالة البقع الصعبة.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-008",
+    "name": "Motorcycle Wash",
+    "slug": "motorcycle-wash",
+    "description": "Wash with Shampoo wax + Tire & Rims Shine + Lights cleaning.",
+    "price": 7,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-008.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "motorcycle wash"
+    ],
+    "featured": true,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.638887156739543,
+    "reviewCount": 5,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل دراجة نارية",
+    "descriptionAr": "غسيل بالشامبو والشمع + تلميع الإطارات والجنوط + تنظيف الأضواء.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-009",
+    "name": "Boat Wash",
+    "slug": "boat-wash",
+    "description": "Boat wash service. Price determined after coordination with the company.",
+    "price": 1.5,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-009.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "boat wash"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.654961707589807,
+    "reviewCount": 9,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل قارب",
+    "descriptionAr": "خدمة غسيل القوارب. السعر يحدد بعد التنسيق مع الشركة.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-010",
+    "name": "Caravan Wash",
+    "slug": "caravan-wash",
+    "description": "Caravan wash service. Price determined after coordination with the company.",
+    "price": 3,
+    "category": "Car wash",
+    "categorySlug": "car-wash",
+    "images": [
+      "/images/product-010.png"
+    ],
+    "specs": [],
+    "tags": [
+      "car wash",
+      "caravan wash"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.5485630784620446,
+    "reviewCount": 35,
+    "createdAt": "2026-07-07",
+    "nameAr": "غسيل كرفان",
+    "descriptionAr": "خدمة غسيل الكرفانات. السعر يحدد بعد التنسيق مع الشركة.",
+    "categoryAr": "غسيل سيارات"
+  },
+  {
+    "id": "ep-011",
+    "name": "PROTECTION HALF HOOD (SUV)",
+    "slug": "protection-half-hood-suv",
+    "description": "Car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 220,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-011.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection half hood (suv)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.308191424294664,
+    "reviewCount": 16,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية نصف غطاء (دفع رباعي)",
+    "descriptionAr": "حماية هيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-012",
+    "name": "PROTECTION HALF HOOD (SEDAN)",
+    "slug": "protection-half-hood-sedan",
+    "description": "Car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 190,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-012.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection half hood (sedan)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.367529040865911,
+    "reviewCount": 13,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية نصف غطاء (سيدان)",
+    "descriptionAr": "حماية هيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-013",
+    "name": "PROTECTION FULL HOOD (SEDAN)",
+    "slug": "protection-full-hood-sedan",
+    "description": "Car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 260,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-013.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection full hood (sedan)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.654421202503112,
+    "reviewCount": 34,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية غطاء كامل (سيدان)",
+    "descriptionAr": "حماية هيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-014",
+    "name": "PROTECTION FULL HOOD (SUV)",
+    "slug": "protection-full-hood-suv",
+    "description": "Car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 280,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-014.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection full hood (suv)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.651902472369298,
+    "reviewCount": 51,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية غطاء كامل (دفع رباعي)",
+    "descriptionAr": "حماية هيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-015",
+    "name": "PROTECTION FULL BODY (SUV)",
+    "slug": "protection-full-body-suv",
+    "description": "Complete car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 700,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-015.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection full body (suv)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.703940798889779,
+    "reviewCount": 52,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية هيكل كامل (دفع رباعي)",
+    "descriptionAr": "حماية كاملة لهيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-016",
+    "name": "PROTECTION FULL BODY (SEDAN)",
+    "slug": "protection-full-body-sedan",
+    "description": "Complete car body protection from COVERGARD. Nano layer, self-healing. 10-year warranty. Includes home service.",
+    "price": 650,
+    "category": "PPF",
+    "categorySlug": "ppf",
+    "images": [
+      "/images/product-016.png"
+    ],
+    "specs": [],
+    "tags": [
+      "ppf",
+      "protection full body (sedan)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.377186796920138,
+    "reviewCount": 18,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية هيكل كامل (سيدان)",
+    "descriptionAr": "حماية كاملة لهيكل السيارة من COVERGARD. طبقة نانو، ذاتية الإصلاح. ضمان 10 سنوات. تشمل خدمة منزلية.",
+    "categoryAr": "حماية الطلاء"
+  },
+  {
+    "id": "ep-017",
+    "name": "Xpel XR Plus (SUV)",
+    "slug": "tenting-xpel-xr-plus",
+    "description": "Thermal insulation from Xpel. 98% thermal insulation rate. Includes home service. 10% guarantee on insulation rate.",
+    "price": 230,
+    "category": "Solar Tinting",
+    "categorySlug": "solar-tinting",
+    "images": [
+      "/images/product-017.png"
+    ],
+    "specs": [],
+    "tags": [
+      "solar tinting",
+      "xpel xr plus (suv)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.599908334262961,
+    "reviewCount": 24,
+    "createdAt": "2026-07-07",
+    "nameAr": "إكسبيل إكس آر بلس (دفع رباعي)",
+    "descriptionAr": "عزل حراري من إكسبيل. نسبة عزل 98%. تشمل خدمة منزلية. ضمان 10% على نسبة العزل.",
+    "categoryAr": "تظليل"
+  },
+  {
+    "id": "ep-018",
+    "name": "Xpel XR Plus (SEDAN)",
+    "slug": "xpel-xr-plus-sedan",
+    "description": "Thermal insulation from Xpel. 98% thermal insulation rate. Includes home service. 10% guarantee on insulation rate.",
+    "price": 210,
+    "category": "Solar Tinting",
+    "categorySlug": "solar-tinting",
+    "images": [
+      "/images/product-018.png"
+    ],
+    "specs": [],
+    "tags": [
+      "solar tinting",
+      "xpel xr plus (sedan)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.468534037399312,
+    "reviewCount": 27,
+    "createdAt": "2026-07-07",
+    "nameAr": "إكسبيل إكس آر بلس (سيدان)",
+    "descriptionAr": "عزل حراري من إكسبيل. نسبة عزل 98%. تشمل خدمة منزلية. ضمان 10% على نسبة العزل.",
+    "categoryAr": "تظليل"
+  },
+  {
+    "id": "ep-019",
+    "name": "(SUV) COVERGARD",
+    "slug": "suv-covergard",
+    "description": "Thermal insulation from COVERGARD. Includes home service. 10% guarantee on insulation rate.",
+    "price": 170,
+    "category": "Solar Tinting",
+    "categorySlug": "solar-tinting",
+    "images": [
+      "/images/product-019.png"
+    ],
+    "specs": [],
+    "tags": [
+      "solar tinting",
+      "(suv) covergard"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.55978295336104,
+    "reviewCount": 34,
+    "createdAt": "2026-07-07",
+    "nameAr": "كفرجارد (دفع رباعي)",
+    "descriptionAr": "عزل حراري من كفرجارد. تشمل خدمة منزلية. ضمان 10% على نسبة العزل.",
+    "categoryAr": "تظليل"
+  },
+  {
+    "id": "ep-020",
+    "name": "(SEDAN) COVERGARD",
+    "slug": "sedan-covergard",
+    "description": "Thermal insulation from COVERGARD. Includes home service. 10% guarantee on insulation rate.",
+    "price": 150,
+    "category": "Solar Tinting",
+    "categorySlug": "solar-tinting",
+    "images": [
+      "/images/product-020.png"
+    ],
+    "specs": [],
+    "tags": [
+      "solar tinting",
+      "(sedan) covergard"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.380740896800199,
+    "reviewCount": 50,
+    "createdAt": "2026-07-07",
+    "nameAr": "كفرجارد (سيدان)",
+    "descriptionAr": "عزل حراري من كفرجارد. تشمل خدمة منزلية. ضمان 10% على نسبة العزل.",
+    "categoryAr": "تظليل"
+  },
+  {
+    "id": "ep-021",
+    "name": "WIND SHIELD",
+    "slug": "wind-shield-protection",
+    "description": "Front glass protection from COVERGARD. Superior strength, fully transparent, 99% UV insulation, durable against sand and dust.",
+    "price": 75,
+    "category": "Wind Shield",
+    "categorySlug": "wind-shield",
+    "images": [
+      "/images/product-021.png"
+    ],
+    "specs": [],
+    "tags": [
+      "wind shield",
+      "wind shield"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.345507715945565,
+    "reviewCount": 16,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية الزجاج الأمامي",
+    "descriptionAr": "حماية الزجاج الأمامي من COVERGARD. قوة فائقة، شفاف بالكامل، عزل 99% من الأشعة فوق البنفسجية، متين ضد الرمال والغبار.",
+    "categoryAr": "حماية الزجاج"
+  },
+  {
+    "id": "ep-022",
+    "name": "RIMS PROTECTION",
+    "slug": "rims-protection",
+    "description": "Rims protector from ALLOYGATOR. Installation service at home. Available in multiple colors.",
+    "price": 70,
+    "category": "Rims Protection",
+    "categorySlug": "rims-protection",
+    "images": [
+      "/images/product-022.png"
+    ],
+    "specs": [],
+    "tags": [
+      "rims protection",
+      "rims protection"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.718387418403975,
+    "reviewCount": 50,
+    "createdAt": "2026-07-07",
+    "nameAr": "حماية الجنوط",
+    "descriptionAr": "حماية الجنوط من ALLOYGATOR. خدمة تركيب في المنزل. متوفر بعدة ألوان.",
+    "categoryAr": "حماية الجنوط"
+  },
+  {
+    "id": "ep-023",
+    "name": "CHECK AND COMPARE",
+    "slug": "check-and-compare",
+    "description": "Car inspection and measurement service. Damages and necessary repairs are determined.",
+    "price": 75,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-023.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "check and compare"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.453704680800607,
+    "reviewCount": 53,
+    "createdAt": "2026-07-07",
+    "nameAr": "فحص ومقارنة",
+    "descriptionAr": "خدمة فحص وقياس السيارة. يتم تحديد الأضرار والإصلاحات اللازمة.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-024",
+    "name": "CAR RIM PAINTING (REMOVABLE)",
+    "slug": "sbgh-rnkt-lkbl-llzl",
+    "description": "Removable rim painting from STANDOX. 5-year warranty.",
+    "price": 200,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-024.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "car rim painting (removable)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.445737717408834,
+    "reviewCount": 15,
+    "createdAt": "2026-07-07",
+    "nameAr": "دهان جنوط (قابل للإزالة)",
+    "descriptionAr": "دهان جنوط قابل للإزالة من STANDOX. ضمان 5 سنوات.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-025",
+    "name": "CAR RIM PAINTING (PERMANENT)",
+    "slug": "sbgh-rnkt-ldm",
+    "description": "Permanent rim painting from STANDOX. 5-year warranty.",
+    "price": 150,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-025.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "car rim painting (permanent)"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.704003734706388,
+    "reviewCount": 43,
+    "createdAt": "2026-07-07",
+    "nameAr": "دهان جنوط (دائم)",
+    "descriptionAr": "دهان جنوط دائم من STANDOX. ضمان 5 سنوات.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-026",
+    "name": "PERMANENT FULL BLACKOUT DYE",
+    "slug": "sbgh-blk-ot-kml-dm",
+    "description": "Permanent full blackout paint from STANDOX. 5-year warranty.",
+    "price": 200,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-026.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "permanent full blackout dye"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.649817698493178,
+    "reviewCount": 39,
+    "createdAt": "2026-07-07",
+    "nameAr": "دهان أسود كامل دائم",
+    "descriptionAr": "دهان أسود كامل دائم من STANDOX. ضمان 5 سنوات.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-027",
+    "name": "FULL CAR BLACKOUT REMOVABLE PAINT",
+    "slug": "full-car-blackout-removable-paint",
+    "description": "Removable full car blackout paint from STANDOX. 5-year warranty.",
+    "price": 300,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-027.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "full car blackout removable paint"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.508754133010734,
+    "reviewCount": 35,
+    "createdAt": "2026-07-07",
+    "nameAr": "دهان أسود كامل قابل للإزالة",
+    "descriptionAr": "دهان أسود كامل قابل للإزالة من STANDOX. ضمان 5 سنوات.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-028",
+    "name": "CAR CALIPER PAINTING",
+    "slug": "sbgh-lklybrt",
+    "description": "Caliper painting from STANDOX. 5-year warranty.",
+    "price": 70,
+    "category": "Body Workshop",
+    "categorySlug": "body-workshop",
+    "images": [
+      "/images/product-028.png"
+    ],
+    "specs": [],
+    "tags": [
+      "body workshop",
+      "car caliper painting"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.662564742129973,
+    "reviewCount": 27,
+    "createdAt": "2026-07-07",
+    "nameAr": "دهان كاليبر الفرامل",
+    "descriptionAr": "دهان كاليبر الفرامل من STANDOX. ضمان 5 سنوات.",
+    "categoryAr": "ورشة هيكل"
+  },
+  {
+    "id": "ep-029",
+    "name": "REMOVE OLD WIND SHIELD",
+    "slug": "remove-old-wind-shield",
+    "description": "Old wind shield removal service.",
+    "price": 10,
+    "category": "Others",
+    "categorySlug": "others",
+    "images": [
+      "/images/product-029.png"
+    ],
+    "specs": [],
+    "tags": [
+      "others",
+      "remove old wind shield"
+    ],
+    "featured": false,
+    "onSale": false,
+    "inStock": true,
+    "rating": 4.730380196983676,
+    "reviewCount": 19,
+    "createdAt": "2026-07-07",
+    "nameAr": "إزالة الزجاج الأمامي القديم",
+    "descriptionAr": "خدمة إزالة الزجاج الأمامي القديم.",
+    "categoryAr": "أخرى"
+  }
+]

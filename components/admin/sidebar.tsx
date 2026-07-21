@@ -51,7 +51,7 @@ export default function AdminSidebar() {
   return (
     <>
       <aside
-        className={`fixed top-0 left-0 z-40 h-screen bg-surface border-r border-border transition-all duration-300 flex flex-col ${
+        className={`fixed top-0 start-0 z-40 h-screen bg-surface border-e border-border transition-all duration-300 flex flex-col ${
           collapsed ? "w-16" : "w-60"
         }`}
       >
@@ -67,12 +67,12 @@ export default function AdminSidebar() {
           </Link>
           <button
             onClick={() => setCollapsed(!collapsed)}
-            className="ml-auto text-text-muted hover:text-text transition-colors shrink-0"
+            className="ms-auto text-text-muted hover:text-text transition-colors shrink-0"
           >
             {collapsed ? (
-              <PanelLeft className="w-4 h-4" />
+              <PanelLeft className="w-4 h-4 rtl-flip" />
             ) : (
-              <PanelLeftClose className="w-4 h-4" />
+              <PanelLeftClose className="w-4 h-4 rtl-flip" />
             )}
           </button>
         </div>
@@ -151,14 +151,14 @@ export default function AdminSidebar() {
         </div>
       </aside>
 
-      <div className={`transition-all duration-300 ${collapsed ? "ml-16" : "ml-60"}`}>
+      <div className={`transition-all duration-300 ${collapsed ? "ms-16" : "ms-60"}`}>
         <div className="sticky top-0 z-30 h-14 bg-surface/80 backdrop-blur-md border-b border-border flex items-center px-6">
           <Link
             href="/"
             className="flex items-center gap-1 text-sm text-text-muted hover:text-text transition-colors"
           >
             <Store className="w-3.5 h-3.5" />
-            <ChevronRight className="w-3.5 h-3.5" />
+            <ChevronRight className="w-3.5 h-3.5 rtl-flip" />
             <span>{t("admin.view-site", locale)}</span>
           </Link>
         </div>

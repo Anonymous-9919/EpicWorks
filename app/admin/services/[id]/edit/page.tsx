@@ -68,7 +68,7 @@ export default function EditServicePage() {
           setImages(service.images ?? []);
         }
       } catch {
-        toast.error("Failed to load service");
+        toast.error(t("services.error-load", locale));
       }
       setLoading(false);
     }
@@ -117,7 +117,7 @@ export default function EditServicePage() {
       toast.success(t("services.updated", locale));
       router.push("/admin/services");
     } catch (err) {
-      toast.error("Error updating service");
+      toast.error(t("services.error-update", locale));
     } finally {
       setSaving(false);
     }
@@ -151,7 +151,7 @@ export default function EditServicePage() {
           href="/admin/services"
           className="p-2 rounded-lg text-text-muted hover:text-text hover:bg-surface-light transition-colors"
         >
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowLeft className={`w-5 h-5 ${locale === "ar" ? "scale-x-[-1]" : ""}`} />
         </Link>
         <div>
           <h1 className="text-2xl font-bold text-text">

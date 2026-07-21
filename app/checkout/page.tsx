@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { CreditCard, Landmark, Lock, ArrowLeft, Check, Calendar, Clock, Smartphone, Wallet } from "lucide-react";
+import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -120,7 +121,7 @@ export default function CheckoutPage() {
       }
     } catch (err) {
       console.error("Checkout error:", err);
-      alert(t("checkout.failed", locale));
+      toast.error(t("checkout.failed", locale));
     } finally {
       setLoading(false);
     }
@@ -233,11 +234,11 @@ export default function CheckoutPage() {
                 }`}
               >
                 <Landmark className={`w-5 h-5 ${paymentMethod === "knet" ? "text-secondary" : "text-text-muted"}`} />
-                <div className="text-left">
+                <div className="text-start">
                   <p className="text-sm font-medium text-text">{t("checkout.knet", locale)}</p>
                   <p className="text-xs text-text-muted">{t("checkout.knet-desc", locale)}</p>
                 </div>
-                {paymentMethod === "knet" && <Check className="w-4 h-4 text-secondary ml-auto" />}
+                {paymentMethod === "knet" && <Check className="w-4 h-4 text-secondary ms-auto" />}
               </button>
               <button
                 type="button"
@@ -247,11 +248,11 @@ export default function CheckoutPage() {
                 }`}
               >
                 <CreditCard className={`w-5 h-5 ${paymentMethod === "credit-card" ? "text-secondary" : "text-text-muted"}`} />
-                <div className="text-left">
+                <div className="text-start">
                   <p className="text-sm font-medium text-text">{t("checkout.credit-card", locale)}</p>
                   <p className="text-xs text-text-muted">{t("checkout.credit-desc", locale)}</p>
                 </div>
-                {paymentMethod === "credit-card" && <Check className="w-4 h-4 text-secondary ml-auto" />}
+                {paymentMethod === "credit-card" && <Check className="w-4 h-4 text-secondary ms-auto" />}
               </button>
               <button
                 type="button"
@@ -261,11 +262,11 @@ export default function CheckoutPage() {
                 }`}
               >
                 <Smartphone className={`w-5 h-5 ${paymentMethod === "apple-pay" ? "text-secondary" : "text-text-muted"}`} />
-                <div className="text-left">
+                <div className="text-start">
                   <p className="text-sm font-medium text-text">{t("checkout.apple-pay", locale)}</p>
                   <p className="text-xs text-text-muted">{t("checkout.apple-pay-desc", locale)}</p>
                 </div>
-                {paymentMethod === "apple-pay" && <Check className="w-4 h-4 text-secondary ml-auto" />}
+                {paymentMethod === "apple-pay" && <Check className="w-4 h-4 text-secondary ms-auto" />}
               </button>
               <button
                 type="button"
@@ -275,11 +276,11 @@ export default function CheckoutPage() {
                 }`}
               >
                 <Wallet className={`w-5 h-5 ${paymentMethod === "google-pay" ? "text-secondary" : "text-text-muted"}`} />
-                <div className="text-left">
+                <div className="text-start">
                   <p className="text-sm font-medium text-text">{t("checkout.google-pay", locale)}</p>
                   <p className="text-xs text-text-muted">{t("checkout.google-pay-desc", locale)}</p>
                 </div>
-                {paymentMethod === "google-pay" && <Check className="w-4 h-4 text-secondary ml-auto" />}
+                {paymentMethod === "google-pay" && <Check className="w-4 h-4 text-secondary ms-auto" />}
               </button>
             </div>
             {paymentMethod === "knet" && (

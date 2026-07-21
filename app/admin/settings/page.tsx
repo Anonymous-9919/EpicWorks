@@ -20,7 +20,7 @@ export default function SettingsPage() {
         const data = await getSettingsAction();
         setForm(data);
       } catch {
-        toast.error("Failed to load settings");
+        toast.error(t("settings.error-saving", locale));
       }
       setLoading(false);
     }

@@ -72,7 +72,7 @@ export default function Dashboard() {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         {cards.map((card) => (
           <div
             key={card.label}
@@ -93,7 +93,7 @@ export default function Dashboard() {
         <h2 className="text-sm font-semibold text-text uppercase tracking-wider mb-3">
           {t("dash.quick-actions", locale)}
         </h2>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <Link href="/admin/services/new">
             <div className="bg-surface rounded-2xl border border-border p-5 hover:border-secondary/30 transition-colors cursor-pointer">
               <Plus className="w-5 h-5 text-secondary mb-2" />

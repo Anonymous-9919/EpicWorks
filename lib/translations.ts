@@ -223,6 +223,21 @@ export const translations: Record<string, { en: string; ar: string }> = {
   "services.error-duplicate": { en: "Error duplicating service", ar: "خطأ في تكرار الخدمة" },
   "services.error-status": { en: "Error updating status", ar: "خطأ في تحديث الحالة" },
   "services.publish": { en: "Publish", ar: "نشر" },
+  "services.error-create": { en: "Error creating service", ar: "خطأ في إنشاء الخدمة" },
+  "services.error-update": { en: "Error updating service", ar: "خطأ في تحديث الخدمة" },
+  "services.error-load": { en: "Failed to load service", ar: "فشل تحميل الخدمة" },
+  "services.error-fetch": { en: "Error fetching services", ar: "خطأ في تحميل الخدمات" },
+  "services.original-price": { en: "Original Price (optional)", ar: "السعر الأصلي (اختياري)" },
+  "services.select-category": { en: "Select category", ar: "اختر الفئة" },
+  "services.spec-placeholder": { en: "Type a specification and press Enter", ar: "اكتب المواصفات واضغط Enter" },
+  "services.add-spec": { en: "Add specification", ar: "إضافة مواصفة" },
+  "services.tag-placeholder": { en: "Type a tag and press Enter", ar: "اكتب العلامة واضغط Enter" },
+  "services.field-en": { en: "English", ar: "الإنجليزية" },
+  "services.field-ar": { en: "Arabic", ar: "العربية" },
+  "services.field-name": { en: "Name", ar: "الاسم" },
+  "services.field-slug": { en: "Slug", ar: "الرابط" },
+  "services.field-description": { en: "Description", ar: "الوصف" },
+  "services.field-price": { en: "Price", ar: "السعر" },
 
   // Categories (admin)
   "categories.title": { en: "Categories", ar: "الفئات" },
@@ -270,6 +285,11 @@ export const translations: Record<string, { en: string; ar: string }> = {
   "media.file-name": { en: "File Name", ar: "اسم الملف" },
   "media.file-size": { en: "Size", ar: "الحجم" },
   "media.file-type": { en: "Type", ar: "النوع" },
+  "media.save": { en: "Save", ar: "حفظ" },
+  "media.error-delete": { en: "Error deleting file", ar: "خطأ في حذف الملف" },
+  "media.error-save-alt": { en: "Error saving alt text", ar: "خطأ في حفظ النص البديل" },
+  "media.max-files": { en: "Maximum files exceeded", ar: "تم تجاوز الحد الأقصى للملفات" },
+  "media.error-upload": { en: "Image upload failed", ar: "فشل رفع الصورة" },
 
   // Settings (admin)
   "settings.title": { en: "Settings", ar: "الإعدادات" },

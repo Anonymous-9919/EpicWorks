@@ -87,7 +87,7 @@ export default function NewServicePage() {
       toast.success(t("services.created", locale));
       router.push("/admin/services");
     } catch (err) {
-      toast.error("Error creating service");
+      toast.error(t("services.error-create", locale));
     } finally {
       setSaving(false);
     }
@@ -112,7 +112,7 @@ export default function NewServicePage() {
           href="/admin/services"
           className="p-2 rounded-lg text-text-muted hover:text-text hover:bg-surface-light transition-colors"
         >
-          <ArrowLeft className="w-5 h-5" />
+          <ArrowLeft className={`w-5 h-5 ${locale === "ar" ? "scale-x-[-1]" : ""}`} />
         </Link>
         <div>
           <h1 className="text-2xl font-bold text-text">

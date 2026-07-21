@@ -53,7 +53,7 @@ export function Header() {
             aria-label={t("aria.toggle-language", locale)}
           >
             <Globe className="w-5 h-5 text-text-muted" />
-            <span className="text-xs font-bold text-text-muted ml-0.5">{locale === "en" ? t("lang.ar", locale) : t("lang.en", locale)}</span>
+            <span className="text-xs font-bold text-text-muted ms-0.5">{locale === "en" ? t("lang.ar", locale) : t("lang.en", locale)}</span>
           </button>
 
           <button
@@ -71,7 +71,7 @@ export function Header() {
           >
             <ShoppingBag className="w-5 h-5 text-text-muted" />
             {mounted && itemCount > 0 && (
-              <span className="absolute -top-0.5 -right-0.5 w-5 h-5 bg-secondary text-primary text-xs font-bold rounded-full flex items-center justify-center">
+              <span className="absolute -top-0.5 -end-0.5 w-5 h-5 bg-secondary text-primary text-xs font-bold rounded-full flex items-center justify-center">
                 {itemCount > 9 ? "9+" : itemCount}
               </span>
             )}
@@ -90,11 +90,11 @@ export function Header() {
       {searchOpen && (
         <div className="border-t border-border px-4 py-3">
           <div className="max-w-7xl mx-auto relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
+            <Search className="absolute start-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
             <input
               type="text"
               placeholder={t("search.placeholder", locale)}
-              className="w-full rounded-xl bg-surface-light/50 border border-border pl-10 pr-4 py-3 text-sm text-text placeholder:text-text-muted/60 focus:outline-none focus:ring-2 focus:ring-secondary/50"
+              className="w-full rounded-xl bg-surface-light/50 border border-border ps-10 pe-4 py-3 text-sm text-text placeholder:text-text-muted/60 focus:outline-none focus:ring-2 focus:ring-secondary/50"
               autoFocus
             />
           </div>

@@ -13,12 +13,19 @@ import { useLocale } from "@/lib/locale";
 import { t } from "@/lib/translations";
 import type { Product } from "@/types";
 
-export function ProductCard({ product, index = 0 }: { product: Product; index?: number }) {
+export function ProductCard({ product: rawProduct, index = 0 }: { product: Product; index?: number }) {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   const { locale } = useLocale();
   const { addItem, updateQuantity, removeItem, getItemQuantity } = useCartStore();
-  const cartQty = getItemQuantity(product.id);
+
+  const product = {
+    ...rawProduct,
+    name: locale === "ar" ? (rawProduct.nameAr || rawProduct.name) : rawProduct.name,
+    category: locale === "ar" ? (rawProduct.categoryAr || rawProduct.category) : rawProduct.category,
+  };
+
+  const cartQty = getItemQuantity(rawProduct.id);
 
   return (
     <motion.div
@@ -35,7 +42,7 @@ export function ProductCard({ product, index = 0 }: { product: Product; index?: 
               alt={product.name}
               className="h-52 md:h-60"
             />
-            <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+            <div className="absolute top-3 start-3 flex flex-col gap-1.5">
               {product.onSale && <Badge variant="sale">{t("badge.sale", locale)}</Badge>}
               {product.featured && <Badge variant="new">{t("badge.featured", locale)}</Badge>}
             </div>

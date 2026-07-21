@@ -59,7 +59,7 @@ export function OrderSuccessContent() {
         </div>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link href="/products">
-            <Button variant="primary">{t("order.continue", locale)} <ArrowRight className="w-4 h-4 ml-2" /></Button>
+            <Button variant="primary">{t("order.continue", locale)} <ArrowRight className={`w-4 h-4 ms-2 ${locale === "ar" ? "scale-x-[-1]" : ""}`} /></Button>
           </Link>
           <Link href="/">
             <Button variant="outline">{t("order.back-home", locale)}</Button>

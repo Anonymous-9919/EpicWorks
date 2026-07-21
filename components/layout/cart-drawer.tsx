@@ -24,8 +24,8 @@ export function CartDrawer() {
 
       {cartDrawerOpen && (
         <div className={cn(
-          "fixed bottom-0 left-0 right-0 z-50 bg-surface border-t border-border rounded-t-3xl max-h-[85vh] flex flex-col",
-          "md:right-4 md:left-auto md:top-4 md:bottom-auto md:w-96 md:rounded-2xl md:max-h-[90vh] md:border"
+          "fixed bottom-0 inset-x-0 z-50 bg-surface border-t border-border rounded-t-3xl max-h-[85vh] flex flex-col",
+          "md:end-4 md:start-auto md:top-4 md:bottom-auto md:w-96 md:rounded-2xl md:max-h-[90vh] md:border"
         )}>
           <div className="flex items-center justify-between p-4 border-b border-border">
             <div className="flex items-center gap-2">
@@ -68,7 +68,7 @@ export function CartDrawer() {
                       </button>
                       <button
                         onClick={() => removeItem(item.productId)}
-                        className="ml-auto p-2.5 rounded-lg hover:bg-accent/10 text-text-muted hover:text-accent"
+                        className="ms-auto p-2.5 rounded-lg hover:bg-accent/10 text-text-muted hover:text-accent"
                       >
                         <Trash2 className="w-3.5 h-3.5" />
                       </button>

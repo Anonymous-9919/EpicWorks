@@ -20,7 +20,7 @@ export default function AdminLayout({
   return (
     <div className="min-h-screen bg-primary-light">
       <AdminSidebar />
-      <div className="ml-60 transition-all duration-300">
+      <div className="ms-60 transition-all duration-300">
         <main className="p-6">{children}</main>
       </div>
     </div>

@@ -3,6 +3,8 @@
 import { useState, useRef } from "react";
 import { Upload, X, Loader2 } from "lucide-react";
 import { uploadImageToRepo } from "@/lib/github";
+import { useLocale } from "@/lib/locale";
+import { t } from "@/lib/translations";
 import { toast } from "sonner";
 
 interface ImageUploadProps {
@@ -13,6 +15,7 @@ interface ImageUploadProps {
 
 export function ImageUpload({ images, onChange, maxFiles = 10 }: ImageUploadProps) {
   const [uploading, setUploading] = useState(false);
+  const { locale } = useLocale();
   const inputRef = useRef<HTMLInputElement>(null);
 
   const compressImage = async (file: File): Promise<File> => {
@@ -73,7 +76,7 @@ export function ImageUpload({ images, onChange, maxFiles = 10 }: ImageUploadProp
     const files = Array.from(e.target.files || []);
     if (files.length === 0) return;
     if (images.length + files.length > maxFiles) {
-      toast.error(`Max ${maxFiles} files`);
+      toast.error(t("media.max-files", locale));
       return;
     }
 
@@ -90,7 +93,7 @@ export function ImageUpload({ images, onChange, maxFiles = 10 }: ImageUploadProp
       onChange([...images, ...newUrls]);
     } catch (err) {
       console.error("Upload failed:", err);
-      toast.error("Image upload failed");
+      toast.error(t("media.error-upload", locale));
     } finally {
       setUploading(false);
       if (inputRef.current) inputRef.current.value = "";
@@ -114,7 +117,7 @@ export function ImageUpload({ images, onChange, maxFiles = 10 }: ImageUploadProp
             <button
               type="button"
               onClick={() => removeImage(i)}
-              className="absolute top-1 right-1 p-1 rounded-lg bg-black/50 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute top-1 end-1 p-1 rounded-lg bg-black/50 text-white opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity"
             >
               <X className="w-3.5 h-3.5" />
             </button>
@@ -132,7 +135,7 @@ export function ImageUpload({ images, onChange, maxFiles = 10 }: ImageUploadProp
             ) : (
               <Upload className="w-5 h-5" />
             )}
-            <span className="text-xs">Upload</span>
+            <span className="text-xs">{t("media.upload", locale)}</span>
           </button>
         )}
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useSearchParams } from "next/navigation";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import { ProductCard } from "@/components/product/product-card";
@@ -31,6 +31,10 @@ export function ProductsContent({
   const [sort, setSort] = useState("latest");
   const [showFilters, setShowFilters] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(categoryFilter || "");
+
+  useEffect(() => {
+    setSelectedCategory(categoryFilter || "");
+  }, [categoryFilter]);
 
   const allProducts = useMemo(() => {
     return initialProducts.map((p) => ({
@@ -96,13 +100,13 @@ export function ProductsContent({
       {/* Search & Filter Bar */}
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <div className="relative flex-1">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
+          <Search className="absolute start-3 top-1/2 -translate-y-1/2 w-4 h-4 text-text-muted" />
           <input
             type="text"
             placeholder={t("product.search", locale)}
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-xl bg-surface-light/50 border border-border pl-10 pr-4 py-3 text-sm text-text placeholder:text-text-muted/60 focus:outline-none focus:ring-2 focus:ring-secondary/50"
+            className="w-full rounded-xl bg-surface-light/50 border border-border ps-10 pe-4 py-3 text-sm text-text placeholder:text-text-muted/60 focus:outline-none focus:ring-2 focus:ring-secondary/50"
           />
         </div>
         <div className="flex gap-2">
@@ -144,7 +148,7 @@ export function ProductsContent({
               }`}
             >
               {cat.name}
-              <span className="float-right text-xs opacity-60">{cat.count}</span>
+              <span className="float-end text-xs opacity-60">{cat.count}</span>
             </button>
           ))}
         </aside>

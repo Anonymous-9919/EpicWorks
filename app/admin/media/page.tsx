@@ -93,7 +93,7 @@ export default function MediaPage() {
       setSelectedFile(null);
       fetchMedia();
     } catch {
-      toast.error("Error deleting file");
+      toast.error(t("media.error-delete", locale));
     }
   };
 
@@ -109,7 +109,7 @@ export default function MediaPage() {
       toast.success(t("settings.saved", locale));
       fetchMedia();
     } catch {
-      toast.error("Error saving alt text");
+      toast.error(t("media.error-save-alt", locale));
     }
   };
 
@@ -165,7 +165,7 @@ export default function MediaPage() {
       </div>
 
       {loading ? (
-        <div className="grid grid-cols-6 gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
           {[...Array(12)].map((_, i) => (
             <div
               key={i}
@@ -179,7 +179,7 @@ export default function MediaPage() {
           <p className="text-text-muted">{t("media.no-data", locale)}</p>
         </div>
       ) : (
-        <div className="grid grid-cols-6 gap-3">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
           {files.map((file) => (
             <div
               key={file.id}
@@ -295,8 +295,8 @@ export default function MediaPage() {
                   size="md"
                   onClick={handleSaveAlt}
                 >
-                  <Check className="w-4 h-4 mr-1.5" />
-                  Save
+                  <Check className="w-4 h-4 me-1.5" />
+                  {t("media.save", locale)}
                 </Button>
                 <Button
                   variant="ghost"

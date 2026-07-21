@@ -82,12 +82,12 @@ export default function CartPage() {
             <Link href="/checkout">
               <Button size="lg" variant="primary" className="w-full mt-2">
                 {t("cart.checkout", locale)}
-                <ArrowRight className="w-5 h-5 ml-2" />
+                <ArrowRight className={`w-5 h-5 ms-2 ${locale === "ar" ? "scale-x-[-1]" : ""}`} />
               </Button>
             </Link>
 
-            <Link href="/products" className="block text-center text-sm text-text-muted hover:text-secondary transition-colors mt-2">
-              <ArrowLeft className="w-4 h-4 inline mr-1" /> {t("cart.continue", locale)}
+            <Link href="/products" className="flex items-center justify-center gap-1 text-sm text-text-muted hover:text-secondary transition-colors mt-2">
+              <ArrowLeft className={`w-4 h-4 ${locale === "ar" ? "scale-x-[-1]" : ""}`} /> {t("cart.continue", locale)}
             </Link>
           </div>
         </div>

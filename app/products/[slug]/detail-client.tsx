@@ -58,19 +58,19 @@ export default function ProductDetailClient({
     <div className="max-w-7xl mx-auto px-4 py-6 md:py-10">
       {/* Back */}
       <Link href="/products" className="inline-flex items-center gap-1.5 text-sm text-text-muted hover:text-secondary mb-6 transition-colors">
-        <ArrowLeft className="w-4 h-4" /> {t("product-detail.back", locale)}
+        <ArrowLeft className={`w-4 h-4 ${locale === "ar" ? "scale-x-[-1]" : ""}`} /> {t("product-detail.back", locale)}
       </Link>
 
       <div className="grid md:grid-cols-2 gap-6 md:gap-12">
         {/* Image Gallery */}
-        <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
+        <motion.div initial={{ opacity: 0, x: locale === "ar" ? 20 : -20 }} animate={{ opacity: 1, x: 0 }}>
           <div className="relative rounded-2xl overflow-hidden bg-surface border border-border mb-3">
             <img
               src={product.images[selectedImage]}
               alt={product.name}
               className="w-full aspect-[4/3] object-contain bg-surface-light"
             />
-            <div className="absolute top-3 left-3 flex flex-col gap-1.5">
+            <div className="absolute top-3 start-3 flex flex-col gap-1.5">
               {product.onSale && <Badge variant="sale">{t("badge.sale", locale)}</Badge>}
               {!product.inStock && <Badge variant="stock" className="bg-accent text-white">{t("badge.out-of-stock", locale)}</Badge>}
             </div>
@@ -91,7 +91,7 @@ export default function ProductDetailClient({
         </motion.div>
 
         {/* Product Info */}
-        <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+        <motion.div initial={{ opacity: 0, x: locale === "ar" ? -20 : 20 }} animate={{ opacity: 1, x: 0 }}>
           <Badge variant="category">{product.category}</Badge>
           <h1 className="text-2xl md:text-3xl font-bold text-text mt-3 mb-3">{product.name}</h1>
 

@@ -108,7 +108,7 @@ export default function HomeClient({
               {t("section.view-all", locale)} →
             </Link>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {displayProducts.slice(0, 8).map((product, i) => (
               <ProductCard key={product.slug} product={product} index={i} />
             ))}

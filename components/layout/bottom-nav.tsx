@@ -40,7 +40,7 @@ export function BottomNav() {
               <div className="relative">
                 <item.icon className="w-5 h-5" />
                 {mounted && item.cart && itemCount > 0 && (
-                  <span className="absolute -top-1.5 -right-2 w-4 h-4 bg-secondary text-primary text-[11px] font-bold rounded-full flex items-center justify-center">
+                  <span className="absolute -top-1.5 -end-2 w-4 h-4 bg-secondary text-primary text-[11px] font-bold rounded-full flex items-center justify-center">
                     {itemCount > 9 ? "9+" : itemCount}
                   </span>
                 )}

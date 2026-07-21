@@ -102,7 +102,7 @@ export default function LoginPage() {
             href="/"
             className="hover:text-secondary transition-colors"
           >
-            ← {t("login.back-to-site", locale)}
+            <span className={locale === "ar" ? "scale-x-[-1] inline-block" : ""}>←</span> {t("login.back-to-site", locale)}
           </a>
         </p>
       </div>

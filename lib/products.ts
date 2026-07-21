@@ -189,3 +189,28 @@ export async function searchProducts(
 
   return rows.map((s) => toProduct(s, catMap, locale));
 }
+
+export async function getRelatedProducts(
+  categorySlug: string,
+  excludeSlug: string,
+  locale?: Locale,
+  limit = 4
+): Promise<Product[]> {
+  const [rows, catMap] = await Promise.all([
+    db
+      .select()
+      .from(services)
+      .where(
+        and(
+          eq(services.categorySlug, categorySlug),
+          eq(services.status, "published"),
+          sql`${services.slug} != ${excludeSlug}`
+        )
+      )
+      .orderBy(asc(services.sortOrder))
+      .limit(limit),
+    getCategoryMap(),
+  ]);
+
+  return rows.map((s) => toProduct(s, catMap, locale));
+}

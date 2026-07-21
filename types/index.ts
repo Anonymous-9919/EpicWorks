@@ -23,6 +23,7 @@ export interface Product {
 
 export interface Category {
   name: string;
+  nameAr: string;
   slug: string;
   count: number;
 }

@@ -6,11 +6,17 @@ import { motion } from "framer-motion";
 import { Search, SlidersHorizontal, X } from "lucide-react";
 import { ProductCard } from "@/components/product/product-card";
 import { Badge } from "@/components/ui/badge";
-import { getProducts, getCategories } from "@/lib/products";
 import { useLocale } from "@/lib/locale";
 import { t } from "@/lib/translations";
+import type { Product, Category } from "@/types";
 
-export function ProductsContent() {
+export function ProductsContent({
+  initialProducts,
+  initialCategories,
+}: {
+  initialProducts: Product[];
+  initialCategories: Category[];
+}) {
   const searchParams = useSearchParams();
   const { locale } = useLocale();
   const categoryFilter = searchParams.get("category");
@@ -26,8 +32,21 @@ export function ProductsContent() {
   const [showFilters, setShowFilters] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState(categoryFilter || "");
 
-  const categories = getCategories(locale);
-  const allProducts = getProducts(locale);
+  const allProducts = useMemo(() => {
+    return initialProducts.map((p) => ({
+      ...p,
+      name: locale === "ar" ? (p.nameAr || p.name) : p.name,
+      description: locale === "ar" ? (p.descriptionAr || p.description) : p.description,
+      category: locale === "ar" ? (p.categoryAr || p.category) : p.category,
+    }));
+  }, [initialProducts, locale]);
+
+  const categories = useMemo(() => {
+    return initialCategories.map((c) => ({
+      ...c,
+      name: locale === "ar" ? (c.nameAr || c.name) : c.name,
+    }));
+  }, [initialCategories, locale]);
 
   const filtered = useMemo(() => {
     let result = [...allProducts];

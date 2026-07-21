@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/footer";
 import { BottomNav } from "@/components/layout/bottom-nav";
 import { CartDrawer } from "@/components/layout/cart-drawer";
 import { LocaleProvider } from "@/lib/locale";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -32,11 +33,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Skip to content
         </a>
         <LocaleProvider>
-          <Header />
-          <main id="main-content" className="flex-1 pb-20 md:pb-0">{children}</main>
-          <Footer />
-          <BottomNav />
-          <CartDrawer />
+          <ThemeProvider>
+            <Header />
+            <main id="main-content" className="flex-1 pb-20 md:pb-0">{children}</main>
+            <Footer />
+            <BottomNav />
+            <CartDrawer />
+          </ThemeProvider>
         </LocaleProvider>
       </body>
     </html>

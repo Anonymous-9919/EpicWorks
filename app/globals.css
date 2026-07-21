@@ -14,6 +14,12 @@
   --color-success: #2ec4b6;
   --color-border: #e9ecef;
 
+  --color-dark-bg: #0b0b0f;
+  --color-dark-card: #14141a;
+  --color-dark-border: #1e1e2a;
+  --color-dark-text: #e4e4e7;
+  --color-dark-muted: #8a8a9a;
+
   --font-sans: var(--font-geist-sans), system-ui, sans-serif;
   --font-mono: ui-monospace, monospace;
 }
@@ -28,6 +34,17 @@
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { @apply bg-primary-light; }
   ::-webkit-scrollbar-thumb { @apply bg-surface-light rounded-full; }
+
+  .dark body,
+  .dark {
+    --color-primary: #0b0b0f;
+    --color-primary-light: #101018;
+    --color-surface: #14141a;
+    --color-surface-light: #1a1a24;
+    --color-text: #e4e4e7;
+    --color-text-muted: #8a8a9a;
+    --color-border: #1e1e2a;
+  }
 }
 
 @layer utilities {
